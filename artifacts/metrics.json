@@ -1,0 +1,22 @@
+{
+  "accuracy": 0.6508,
+  "f1_score": 0.3125,
+  "roc_auc": 0.6531,
+  "cv_mean_accuracy": 0.637,
+  "cv_std_accuracy": 0.0924,
+  "confusion_matrix": [
+    [
+      36,
+      6
+    ],
+    [
+      16,
+      5
+    ]
+  ],
+  "best_params": {
+    "classifier__learning_rate": 0.2,
+    "classifier__max_depth": 5,
+    "classifier__n_estimators": 50
+  }
+}

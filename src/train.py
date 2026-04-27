@@ -167,7 +167,7 @@ def main() -> None:
     logger.info("Running GridSearchCV with %d-fold CV …", CV_FOLDS)
     grid_search = GridSearchCV(
         estimator=pipeline,
-        param_grid=LR_PARAM_GRID,
+        param_grid=XGB_PARAM_GRID,
         cv=CV_FOLDS,
         scoring="f1",
         n_jobs=-1,

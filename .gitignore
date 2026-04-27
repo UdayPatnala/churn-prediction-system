@@ -11,7 +11,9 @@ env/
 .pytest_cache/
 .ipynb_checkpoints/
 .DS_Store
-artifacts/
+artifacts/*
 !artifacts/.gitkeep
+!artifacts/*.joblib
+!artifacts/*.json
 htmlcov/
 .coverage
