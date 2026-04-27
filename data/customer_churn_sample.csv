@@ -1,0 +1,13 @@
+customer_id,tenure,monthly_charges,total_charges,contract,has_internet,has_phone,support_tickets,churn
+CU001,2,65.2,130.4,Month-to-month,Yes,Yes,3,1
+CU002,36,42.5,1530.0,One year,Yes,Yes,0,0
+CU003,12,70.1,841.2,Month-to-month,Yes,No,2,1
+CU004,48,55.0,2640.0,Two year,Yes,Yes,0,0
+CU005,5,89.9,449.5,Month-to-month,Yes,Yes,4,1
+CU006,28,39.0,1092.0,One year,No,Yes,1,0
+CU007,9,75.0,675.0,Month-to-month,Yes,Yes,2,1
+CU008,60,45.0,2700.0,Two year,Yes,Yes,0,0
+CU009,18,58.0,1044.0,One year,Yes,No,1,0
+CU010,3,92.0,276.0,Month-to-month,Yes,Yes,5,1
+CU011,42,37.0,1554.0,Two year,No,Yes,0,0
+CU012,7,68.0,476.0,Month-to-month,Yes,Yes,3,1
