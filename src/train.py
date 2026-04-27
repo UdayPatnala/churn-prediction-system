@@ -32,7 +32,7 @@ import joblib
 import numpy as np
 import pandas as pd
 from sklearn.compose import ColumnTransformer
-from sklearn.linear_model import LogisticRegression
+from xgboost import XGBClassifier
 from sklearn.metrics import (
     accuracy_score,
     classification_report,
@@ -51,7 +51,7 @@ from src.config import (
     DATA_PATH,
     FEATURE_COLUMNS,
     FEATURES_PATH,
-    LR_PARAM_GRID,
+    XGB_PARAM_GRID,
     METRICS_PATH,
     MODEL_PATH,
     NUMERIC_FEATURES,
@@ -134,7 +134,7 @@ def _build_pipeline() -> Pipeline:
     return Pipeline(
         steps=[
             ("preprocessor", preprocessor),
-            ("classifier", LogisticRegression(max_iter=1000, random_state=RANDOM_STATE)),
+            ("classifier", XGBClassifier(random_state=RANDOM_STATE, eval_metric="logloss")),
         ]
     )
 

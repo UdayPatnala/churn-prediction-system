@@ -42,10 +42,11 @@ TEST_SIZE: float = float(os.getenv("CHURN_TEST_SIZE", "0.25"))
 RANDOM_STATE: int = int(os.getenv("CHURN_RANDOM_STATE", "42"))
 CV_FOLDS: int = int(os.getenv("CHURN_CV_FOLDS", "5"))
 
-# Logistic Regression search space for GridSearchCV
-LR_PARAM_GRID: dict = {
-    "classifier__C": [0.01, 0.1, 1.0, 10.0],
-    "classifier__solver": ["lbfgs", "liblinear"],
+# XGBoost search space for GridSearchCV
+XGB_PARAM_GRID: dict = {
+    "classifier__max_depth": [3, 5, 7],
+    "classifier__learning_rate": [0.01, 0.1, 0.2],
+    "classifier__n_estimators": [50, 100, 200],
 }
 
 # ── Allowed Categorical Values (used by Pydantic schemas) ───────────────
