@@ -1,114 +1,94 @@
-# Customer Churn Prediction — ML API
+# Customer Churn Prediction System
 
-A machine learning pipeline that trains a customer churn classifier on telecom-style data and serves real-time predictions through a FastAPI REST endpoint.
+A complete machine learning application that predicts customer churn using a trained model served via a FastAPI REST endpoint and an interactive Streamlit frontend.
 
-## Tech Stack
+## 🚀 Architecture
 
+```mermaid
+graph TD
+    A[Raw Data CSV] --> B(train.py)
+    B -->|GridSearchCV + CV| C[Pipeline: StandardScaler + OneHotEncoder]
+    C --> D[Logistic Regression Model]
+    D -->|joblib| E[(artifacts/)]
+    E --> F(api.py - FastAPI)
+    F <--> G[app.py - Streamlit UI]
+```
+
+## 🛠️ Tech Stack
 - **Python 3.10+**
-- **Scikit-learn** — Logistic Regression with preprocessing pipeline
-- **FastAPI** — async prediction API
-- **Pandas** — data handling
+- **Scikit-learn**: Machine learning pipeline (Preprocessing, Logistic Regression, GridSearchCV)
+- **FastAPI**: Asynchronous REST API
+- **Pydantic**: Robust schema validation
+- **Streamlit**: Interactive user interface
+- **Pandas**: Data manipulation
 
-## Architecture
+## ✨ Key Features & Engineering Decisions
 
-```
-data/customer_churn_sample.csv
-        │
-        ▼
-  ┌───────────┐      ┌────────────────────┐
-  │  train.py  │─────▶│ artifacts/         │
-  │            │      │  churn_model.joblib │
-  └───────────┘      │  metrics.json       │
-                      └────────┬───────────┘
-                               │  loaded at startup
-                               ▼
-                      ┌────────────────┐
-                      │   api.py       │
-                      │  POST /predict │
-                      │  GET  /health  │
-                      └────────────────┘
-```
+1. **Robust Preprocessing Pipeline**: Uses `ColumnTransformer` to handle both numeric and categorical features within a single Scikit-learn `Pipeline`. This prevents data leakage and simplifies inference.
+2. **Hyperparameter Tuning**: Implements `GridSearchCV` with k-fold cross-validation to find the optimal Logistic Regression parameters (`C` and `solver`), evaluated via F1-score.
+3. **Comprehensive Metrics**: Evaluates hold-out performance using Accuracy, F1 Score, ROC-AUC, and Confusion Matrices to fully understand the imbalanced class nature of churn.
+4. **Strong Typing & Validation**: Pydantic `Literal` types strictly validate API inputs (e.g., rejecting invalid categories) before they reach the model.
+5. **Observability**: FastAPI middleware injects a unique `X-Request-ID` into every request for tracing.
+6. **Centralized Configuration**: All paths, hyperparams, and feature definitions live in `config.py`.
 
-## Setup & Run
+## 📦 Setup & Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/UdayPatnala/churn-prediction-system.git
+cd churn-prediction-system
+
+# Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
+```
 
-# Train the model
+## 🏃‍♂️ Running the System
+
+### 1. Train the Model
+You must train the model before running the API or UI.
+```bash
 python src/train.py
+```
+*This validates the data, trains the model, and saves `churn_model.joblib` and `metrics.json` to the `artifacts/` folder.*
 
-# Start the API server
-uvicorn src.api:app --reload
+### 2. Start the API
+```bash
+uvicorn src.api:app --reload --port 8000
 ```
 
-## API Reference
-
-### `GET /health`
-
-```json
-{ "status": "ok" }
+### 3. Start the UI (in a new terminal)
+```bash
+streamlit run app.py
 ```
 
-### `POST /predict`
+## 🧪 Testing the API directly
 
-**Request:**
+You can access the auto-generated Swagger UI at `http://localhost:8000/docs` or use `curl`:
 
-```json
-{
-  "tenure": 5,
+**Check Health:**
+```bash
+curl http://localhost:8000/health
+```
+
+**Make a Prediction:**
+```bash
+curl -X 'POST' \
+  'http://localhost:8000/predict' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "tenure": 12,
   "monthly_charges": 89.9,
-  "total_charges": 449.5,
+  "total_charges": 1078.8,
   "contract": "Month-to-month",
   "has_internet": "Yes",
   "has_phone": "Yes",
-  "support_tickets": 4
-}
+  "support_tickets": 2
+}'
 ```
 
-**Response:**
-
-```json
-{
-  "churn_probability": 0.8321,
-  "prediction": 1,
-  "label": "Likely to churn"
-}
-```
-
-## Features
-
-| Feature | Type | Description |
-|---------|------|-------------|
-| `tenure` | int | Months as a customer |
-| `monthly_charges` | float | Current monthly bill |
-| `total_charges` | float | Lifetime spend |
-| `contract` | str | Month-to-month / One year / Two year |
-| `has_internet` | str | Yes / No |
-| `has_phone` | str | Yes / No |
-| `support_tickets` | int | Number of tickets raised |
-
-## Project Structure
-
-```
-├── data/
-│   └── customer_churn_sample.csv   # Training dataset (50 records)
-├── src/
-│   ├── __init__.py
-│   ├── train.py                    # Model training + evaluation
-│   ├── api.py                      # FastAPI prediction endpoint
-│   └── schemas.py                  # Pydantic request schema
-├── artifacts/                      # Trained model + metrics (git-ignored)
-├── requirements.txt
-└── README.md
-```
-
-## Key Concepts
-
-- Scikit-learn Pipeline with ColumnTransformer (mixed numeric + categorical)
-- Stratified train/test split for imbalanced classes
-- Pydantic schema validation on API inputs
-- Model serialization with joblib
-
-## License
-
-MIT
+## 📝 License
+MIT License

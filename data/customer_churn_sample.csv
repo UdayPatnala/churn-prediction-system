@@ -1,51 +1,251 @@
-customer_id,tenure,monthly_charges,total_charges,contract,has_internet,has_phone,support_tickets,churn
-CU001,2,65.2,130.4,Month-to-month,Yes,Yes,3,1
-CU002,36,42.5,1530.0,One year,Yes,Yes,0,0
-CU003,12,70.1,841.2,Month-to-month,Yes,No,2,1
-CU004,48,55.0,2640.0,Two year,Yes,Yes,0,0
-CU005,5,89.9,449.5,Month-to-month,Yes,Yes,4,1
-CU006,28,39.0,1092.0,One year,No,Yes,1,0
-CU007,9,75.0,675.0,Month-to-month,Yes,Yes,2,1
-CU008,60,45.0,2700.0,Two year,Yes,Yes,0,0
-CU009,18,58.0,1044.0,One year,Yes,No,1,0
-CU010,3,92.0,276.0,Month-to-month,Yes,Yes,5,1
-CU011,42,37.0,1554.0,Two year,No,Yes,0,0
-CU012,7,68.0,476.0,Month-to-month,Yes,Yes,3,1
-CU013,24,50.0,1200.0,One year,Yes,Yes,0,0
-CU014,1,85.5,85.5,Month-to-month,Yes,No,4,1
-CU015,54,40.0,2160.0,Two year,Yes,Yes,0,0
-CU016,6,78.0,468.0,Month-to-month,Yes,Yes,3,1
-CU017,30,47.5,1425.0,One year,No,Yes,0,0
-CU018,4,91.0,364.0,Month-to-month,Yes,Yes,5,1
-CU019,36,52.0,1872.0,Two year,Yes,No,1,0
-CU020,11,72.5,797.5,Month-to-month,Yes,Yes,2,1
-CU021,44,38.0,1672.0,Two year,Yes,Yes,0,0
-CU022,8,80.0,640.0,Month-to-month,Yes,Yes,3,1
-CU023,20,55.5,1110.0,One year,Yes,Yes,1,0
-CU024,2,88.0,176.0,Month-to-month,Yes,No,4,1
-CU025,50,43.0,2150.0,Two year,No,Yes,0,0
-CU026,14,63.0,882.0,Month-to-month,Yes,Yes,2,1
-CU027,32,41.0,1312.0,One year,Yes,Yes,0,0
-CU028,3,95.0,285.0,Month-to-month,Yes,Yes,6,1
-CU029,40,48.0,1920.0,Two year,Yes,Yes,0,0
-CU030,10,69.0,690.0,Month-to-month,Yes,No,2,1
-CU031,26,44.5,1157.0,One year,Yes,Yes,1,0
-CU032,5,82.0,410.0,Month-to-month,Yes,Yes,3,1
-CU033,56,36.0,2016.0,Two year,No,Yes,0,0
-CU034,7,76.5,535.5,Month-to-month,Yes,Yes,4,1
-CU035,22,53.0,1166.0,One year,Yes,No,0,0
-CU036,1,90.0,90.0,Month-to-month,Yes,Yes,5,1
-CU037,46,39.5,1817.0,Two year,Yes,Yes,0,0
-CU038,13,67.0,871.0,Month-to-month,Yes,Yes,2,1
-CU039,34,46.0,1564.0,One year,No,Yes,0,0
-CU040,4,87.0,348.0,Month-to-month,Yes,Yes,4,1
-CU041,58,42.0,2436.0,Two year,Yes,Yes,0,0
-CU042,16,60.0,960.0,One year,Yes,Yes,1,0
-CU043,6,83.5,501.0,Month-to-month,Yes,No,3,1
-CU044,38,49.0,1862.0,Two year,Yes,Yes,0,0
-CU045,9,74.0,666.0,Month-to-month,Yes,Yes,2,1
-CU046,28,51.5,1442.0,One year,Yes,Yes,0,0
-CU047,3,93.0,279.0,Month-to-month,Yes,Yes,5,1
-CU048,52,37.5,1950.0,Two year,No,Yes,0,0
-CU049,15,62.0,930.0,One year,Yes,Yes,1,0
-CU050,2,86.0,172.0,Month-to-month,Yes,Yes,4,1
+customer_id,tenure,monthly_charges,contract,has_internet,has_phone,support_tickets,total_charges,churn
+CU001,52,63.44,Month-to-month,No,Yes,9,3298.88,1
+CU002,15,55.01,Month-to-month,Yes,Yes,5,825.15,1
+CU003,61,84.51,Month-to-month,Yes,Yes,1,5155.11,0
+CU004,21,86.89,Two year,Yes,Yes,2,1824.69,0
+CU005,24,106.42,One year,No,Yes,0,2554.08,0
+CU006,3,43.02,Month-to-month,Yes,Yes,8,129.06,0
+CU007,22,69.92,One year,Yes,Yes,7,1538.24,1
+CU008,53,77.2,Two year,Yes,Yes,1,4091.6,0
+CU009,2,96.86,Two year,Yes,Yes,7,193.72,1
+CU010,30,24.36,Month-to-month,Yes,Yes,8,730.8,0
+CU011,38,119.46,Month-to-month,No,Yes,0,4539.48,0
+CU012,2,66.99,Month-to-month,Yes,Yes,4,133.98,0
+CU013,64,47.96,Month-to-month,Yes,No,7,3069.44,0
+CU014,60,108.35,Month-to-month,Yes,Yes,1,6501.0,0
+CU015,21,94.77,One year,Yes,Yes,3,1990.17,0
+CU016,33,115.31,Month-to-month,Yes,Yes,6,3805.23,0
+CU017,58,53.08,Month-to-month,Yes,Yes,2,3078.64,0
+CU018,22,75.28,Month-to-month,Yes,No,4,1656.16,0
+CU019,49,77.23,Month-to-month,Yes,Yes,7,3784.27,1
+CU020,59,118.03,Month-to-month,Yes,Yes,9,6963.77,0
+CU021,42,27.53,Month-to-month,Yes,Yes,2,1156.26,1
+CU022,60,50.57,Month-to-month,Yes,Yes,3,3034.2,1
+CU023,15,39.09,Month-to-month,Yes,No,8,586.35,1
+CU024,62,46.85,Month-to-month,Yes,Yes,6,2904.7,0
+CU025,62,68.53,One year,Yes,Yes,0,4248.86,0
+CU026,47,57.27,Month-to-month,Yes,Yes,3,2691.69,0
+CU027,62,59.47,Month-to-month,No,Yes,3,3687.14,1
+CU028,51,104.42,Month-to-month,Yes,Yes,8,5325.42,0
+CU029,55,113.0,Two year,Yes,No,5,6215.0,1
+CU030,64,27.04,Month-to-month,Yes,No,8,1730.56,1
+CU031,3,40.89,One year,No,Yes,5,122.67,1
+CU032,51,87.11,Two year,Yes,Yes,5,4442.61,0
+CU033,7,55.86,Month-to-month,Yes,Yes,4,391.02,1
+CU034,21,45.42,Two year,Yes,Yes,4,953.82,0
+CU035,39,49.53,One year,Yes,Yes,1,1931.67,0
+CU036,18,52.26,Month-to-month,Yes,Yes,7,940.68,0
+CU037,4,104.87,Month-to-month,Yes,No,7,419.48,1
+CU038,60,33.66,Two year,Yes,Yes,0,2019.6,0
+CU039,14,90.89,Month-to-month,Yes,Yes,7,1272.46,1
+CU040,9,75.28,Two year,Yes,Yes,4,677.52,0
+CU041,53,49.65,Month-to-month,Yes,Yes,1,2631.45,0
+CU042,2,61.98,One year,Yes,Yes,1,123.96,1
+CU043,60,45.62,Month-to-month,Yes,Yes,5,2737.2,0
+CU044,71,81.15,Two year,Yes,Yes,8,5761.65,0
+CU045,44,28.16,One year,Yes,Yes,0,1239.04,0
+CU046,8,20.52,Month-to-month,Yes,Yes,5,164.16,0
+CU047,47,82.79,Month-to-month,Yes,Yes,8,3891.13,1
+CU048,35,39.43,Month-to-month,Yes,Yes,7,1380.05,0
+CU049,36,27.09,Month-to-month,Yes,Yes,5,975.24,1
+CU050,50,59.68,Month-to-month,Yes,Yes,2,2984.0,0
+CU051,4,25.08,One year,Yes,Yes,7,100.32,0
+CU052,2,108.66,One year,Yes,Yes,8,217.32,1
+CU053,6,22.76,One year,Yes,Yes,0,136.56,0
+CU054,54,77.89,Two year,Yes,Yes,8,4206.06,0
+CU055,4,63.85,One year,No,Yes,5,255.4,0
+CU056,54,87.2,One year,No,Yes,5,4708.8,0
+CU057,63,52.82,Two year,Yes,Yes,3,3327.66,0
+CU058,18,35.5,Month-to-month,Yes,Yes,0,639.0,0
+CU059,44,118.18,Month-to-month,Yes,Yes,9,5199.92,1
+CU060,34,103.89,Month-to-month,Yes,Yes,7,3532.26,1
+CU061,62,106.04,Month-to-month,Yes,Yes,1,6574.48,0
+CU062,14,45.03,Month-to-month,No,Yes,0,630.42,0
+CU063,48,23.88,Month-to-month,Yes,Yes,1,1146.24,0
+CU064,15,50.33,Two year,Yes,Yes,0,754.95,0
+CU065,62,73.71,Two year,Yes,Yes,0,4570.02,0
+CU066,40,52.67,Month-to-month,Yes,Yes,8,2106.8,1
+CU067,53,102.79,Month-to-month,Yes,Yes,0,5447.87,0
+CU068,24,47.15,Month-to-month,Yes,Yes,3,1131.6,1
+CU069,26,116.53,Month-to-month,No,Yes,9,3029.78,0
+CU070,60,65.73,Month-to-month,Yes,No,5,3943.8,0
+CU071,41,104.2,Two year,Yes,Yes,6,4272.2,1
+CU072,29,39.44,Month-to-month,Yes,Yes,1,1143.76,0
+CU073,15,61.14,Two year,Yes,Yes,5,917.1,0
+CU074,45,89.95,Two year,Yes,No,6,4047.75,0
+CU075,65,33.84,Month-to-month,Yes,Yes,9,2199.6,1
+CU076,71,33.27,Two year,Yes,Yes,9,2362.17,0
+CU077,9,116.95,One year,Yes,Yes,1,1052.55,0
+CU078,1,91.46,Month-to-month,No,Yes,1,91.46,1
+CU079,8,24.11,Month-to-month,No,Yes,9,192.88,1
+CU080,63,59.88,Two year,Yes,Yes,6,3772.44,1
+CU081,11,63.35,One year,Yes,Yes,0,696.85,0
+CU082,8,94.4,Two year,Yes,Yes,7,755.2,0
+CU083,35,45.09,Two year,Yes,Yes,2,1578.15,0
+CU084,35,38.43,One year,No,Yes,5,1345.05,1
+CU085,33,28.09,Two year,Yes,Yes,8,926.97,0
+CU086,5,62.83,One year,Yes,Yes,5,314.15,0
+CU087,41,88.85,One year,Yes,Yes,8,3642.85,1
+CU088,28,25.82,One year,Yes,Yes,6,722.96,0
+CU089,7,111.52,Month-to-month,Yes,Yes,8,780.64,1
+CU090,12,64.24,One year,Yes,Yes,1,770.88,0
+CU091,34,43.98,One year,Yes,Yes,7,1495.32,0
+CU092,33,29.39,Month-to-month,Yes,Yes,7,969.87,1
+CU093,48,38.29,Two year,Yes,Yes,1,1837.92,0
+CU094,23,113.46,Month-to-month,Yes,Yes,3,2609.58,0
+CU095,62,83.83,One year,Yes,No,6,5197.46,1
+CU096,37,71.67,One year,No,Yes,3,2651.79,0
+CU097,44,85.71,Two year,No,Yes,3,3771.24,0
+CU098,35,63.57,Month-to-month,Yes,Yes,5,2224.95,1
+CU099,65,93.0,Two year,Yes,Yes,9,6045.0,0
+CU100,47,24.77,Two year,No,No,5,1164.19,1
+CU101,3,76.6,Month-to-month,Yes,Yes,9,229.8,1
+CU102,1,35.86,Month-to-month,Yes,Yes,2,35.86,1
+CU103,5,32.02,One year,No,Yes,8,160.1,0
+CU104,14,54.19,Month-to-month,Yes,No,9,758.66,1
+CU105,27,29.18,Month-to-month,Yes,Yes,1,787.86,0
+CU106,9,29.42,One year,Yes,Yes,5,264.78,0
+CU107,15,51.14,Month-to-month,Yes,No,6,767.1,0
+CU108,42,117.95,One year,Yes,No,8,4953.9,0
+CU109,51,37.53,Month-to-month,Yes,Yes,2,1914.03,0
+CU110,63,21.72,One year,Yes,Yes,9,1368.36,1
+CU111,52,96.34,Month-to-month,Yes,Yes,2,5009.68,0
+CU112,4,100.69,One year,Yes,Yes,6,402.76,0
+CU113,23,54.63,Month-to-month,Yes,Yes,3,1256.49,0
+CU114,15,66.47,One year,No,Yes,7,997.05,0
+CU115,43,84.98,Month-to-month,Yes,Yes,6,3654.14,0
+CU116,29,24.81,Two year,Yes,Yes,4,719.49,0
+CU117,36,114.91,One year,No,Yes,6,4136.76,0
+CU118,13,108.67,Two year,Yes,Yes,2,1412.71,0
+CU119,32,46.09,One year,Yes,No,1,1474.88,0
+CU120,71,21.53,Month-to-month,Yes,Yes,5,1528.63,0
+CU121,59,113.34,Two year,Yes,Yes,1,6687.06,0
+CU122,28,70.1,Month-to-month,Yes,Yes,2,1962.8,0
+CU123,66,73.94,Month-to-month,Yes,Yes,5,4880.04,0
+CU124,42,88.4,Month-to-month,Yes,Yes,4,3712.8,1
+CU125,45,81.59,One year,Yes,Yes,7,3671.55,0
+CU126,62,114.39,One year,Yes,Yes,8,7092.18,0
+CU127,57,114.43,Month-to-month,Yes,Yes,2,6522.51,1
+CU128,6,106.72,Two year,Yes,Yes,9,640.32,0
+CU129,28,83.64,Month-to-month,No,Yes,2,2341.92,0
+CU130,28,100.09,Month-to-month,Yes,No,2,2802.52,0
+CU131,44,87.72,Month-to-month,Yes,Yes,5,3859.68,1
+CU132,30,77.34,Month-to-month,Yes,Yes,0,2320.2,1
+CU133,62,32.85,Month-to-month,Yes,Yes,6,2036.7,0
+CU134,62,101.12,One year,Yes,Yes,0,6269.44,0
+CU135,1,102.06,One year,Yes,Yes,4,102.06,1
+CU136,27,82.59,Month-to-month,Yes,Yes,9,2229.93,0
+CU137,62,102.04,Month-to-month,Yes,Yes,7,6326.48,1
+CU138,3,85.15,Month-to-month,Yes,Yes,3,255.45,1
+CU139,70,40.67,Two year,Yes,Yes,4,2846.9,0
+CU140,27,47.4,Month-to-month,Yes,Yes,3,1279.8,0
+CU141,9,41.46,One year,Yes,Yes,3,373.14,1
+CU142,62,57.73,Two year,Yes,Yes,7,3579.26,0
+CU143,37,23.9,One year,No,Yes,1,884.3,0
+CU144,51,81.83,Two year,Yes,Yes,0,4173.33,0
+CU145,44,53.66,Month-to-month,No,Yes,2,2361.04,0
+CU146,24,85.57,Two year,No,No,8,2053.68,0
+CU147,59,58.54,One year,No,Yes,3,3453.86,0
+CU148,32,88.16,One year,No,Yes,9,2821.12,1
+CU149,52,54.06,Month-to-month,Yes,Yes,4,2811.12,0
+CU150,62,46.07,Month-to-month,Yes,Yes,1,2856.34,0
+CU151,58,69.6,Month-to-month,Yes,Yes,3,4036.8,0
+CU152,52,89.29,One year,Yes,Yes,1,4643.08,0
+CU153,12,54.83,Two year,Yes,Yes,1,657.96,0
+CU154,39,113.66,One year,Yes,No,3,4432.74,0
+CU155,2,23.92,Month-to-month,Yes,Yes,5,47.84,1
+CU156,3,61.79,Two year,Yes,Yes,6,185.37,1
+CU157,56,116.76,Month-to-month,No,No,9,6538.56,1
+CU158,59,74.8,Month-to-month,Yes,Yes,2,4413.2,1
+CU159,2,62.35,Month-to-month,Yes,Yes,2,124.7,0
+CU160,2,76.85,One year,No,Yes,9,153.7,1
+CU161,54,77.59,Month-to-month,No,No,5,4189.86,0
+CU162,1,93.16,One year,Yes,Yes,2,93.16,0
+CU163,19,32.77,Two year,No,Yes,1,622.63,0
+CU164,2,45.0,Month-to-month,No,Yes,7,90.0,0
+CU165,53,78.05,One year,No,Yes,4,4136.65,0
+CU166,44,106.71,Month-to-month,Yes,Yes,0,4695.24,0
+CU167,32,76.19,Month-to-month,Yes,Yes,2,2438.08,0
+CU168,70,43.86,Month-to-month,Yes,Yes,9,3070.2,1
+CU169,32,87.98,Month-to-month,Yes,Yes,7,2815.36,1
+CU170,68,93.99,One year,Yes,Yes,3,6391.32,0
+CU171,55,43.82,Month-to-month,Yes,Yes,6,2410.1,1
+CU172,56,57.77,One year,No,Yes,9,3235.12,0
+CU173,17,73.43,One year,Yes,Yes,1,1248.31,0
+CU174,38,69.66,One year,No,No,6,2647.08,1
+CU175,24,58.96,One year,Yes,Yes,4,1415.04,0
+CU176,69,49.76,One year,Yes,Yes,4,3433.44,0
+CU177,70,30.0,Month-to-month,No,Yes,5,2100.0,0
+CU178,11,25.35,Month-to-month,Yes,Yes,8,278.85,1
+CU179,16,115.85,Two year,Yes,No,5,1853.6,1
+CU180,59,104.71,One year,No,Yes,7,6177.89,1
+CU181,70,55.49,Month-to-month,Yes,Yes,6,3884.3,1
+CU182,3,115.68,Month-to-month,Yes,Yes,8,347.04,1
+CU183,20,87.68,Month-to-month,No,Yes,3,1753.6,0
+CU184,59,68.25,Two year,Yes,Yes,1,4026.75,0
+CU185,36,69.3,Month-to-month,Yes,No,6,2494.8,1
+CU186,19,28.33,Month-to-month,Yes,Yes,5,538.27,1
+CU187,67,29.17,Month-to-month,No,Yes,0,1954.39,1
+CU188,19,80.24,Month-to-month,Yes,Yes,8,1524.56,1
+CU189,20,75.37,Two year,No,Yes,8,1507.4,0
+CU190,71,41.27,Month-to-month,Yes,Yes,1,2930.17,0
+CU191,52,114.62,Two year,Yes,Yes,2,5960.24,0
+CU192,33,98.13,Month-to-month,Yes,Yes,4,3238.29,1
+CU193,40,31.35,Two year,No,Yes,4,1254.0,0
+CU194,39,113.09,Month-to-month,Yes,Yes,0,4410.51,1
+CU195,1,117.42,Month-to-month,Yes,Yes,7,117.42,1
+CU196,11,119.59,One year,Yes,Yes,7,1315.49,1
+CU197,57,25.59,Two year,Yes,Yes,3,1458.63,0
+CU198,50,93.7,Two year,Yes,Yes,6,4685.0,1
+CU199,23,74.59,One year,Yes,Yes,9,1715.57,0
+CU200,31,90.58,Two year,Yes,Yes,2,2807.98,0
+CU201,42,116.87,Month-to-month,Yes,Yes,5,4908.54,0
+CU202,7,88.8,Two year,Yes,Yes,9,621.6,1
+CU203,16,103.7,Month-to-month,Yes,Yes,9,1659.2,1
+CU204,60,106.69,One year,Yes,Yes,8,6401.4,0
+CU205,2,103.85,Two year,No,Yes,0,207.7,1
+CU206,1,62.61,One year,Yes,Yes,4,62.61,0
+CU207,48,42.26,One year,Yes,Yes,3,2028.48,0
+CU208,12,59.67,Month-to-month,No,Yes,7,716.04,0
+CU209,69,109.19,Two year,Yes,No,0,7534.11,0
+CU210,37,34.66,Month-to-month,No,Yes,8,1282.42,0
+CU211,32,71.33,Two year,Yes,Yes,5,2282.56,0
+CU212,9,43.32,One year,Yes,Yes,3,389.88,0
+CU213,19,78.13,Month-to-month,Yes,Yes,8,1484.47,0
+CU214,48,106.31,One year,Yes,Yes,4,5102.88,1
+CU215,3,108.04,One year,Yes,Yes,4,324.12,0
+CU216,20,43.67,One year,Yes,Yes,4,873.4,0
+CU217,24,110.77,Two year,Yes,No,0,2658.48,0
+CU218,54,79.19,Month-to-month,Yes,Yes,0,4276.26,0
+CU219,33,55.02,One year,Yes,Yes,7,1815.66,0
+CU220,24,90.82,Two year,Yes,Yes,7,2179.68,0
+CU221,36,68.17,Month-to-month,Yes,Yes,5,2454.12,1
+CU222,38,57.8,One year,Yes,Yes,3,2196.4,0
+CU223,25,90.51,Month-to-month,Yes,Yes,1,2262.75,0
+CU224,18,44.87,Month-to-month,Yes,Yes,1,807.66,0
+CU225,66,53.03,One year,No,Yes,8,3499.98,0
+CU226,54,63.45,One year,Yes,Yes,4,3426.3,0
+CU227,35,45.37,Month-to-month,Yes,Yes,3,1587.95,0
+CU228,61,60.52,One year,Yes,Yes,9,3691.72,1
+CU229,41,77.15,Month-to-month,Yes,Yes,0,3163.15,1
+CU230,33,94.1,Month-to-month,No,Yes,6,3105.3,1
+CU231,68,96.72,Month-to-month,Yes,No,2,6576.96,1
+CU232,33,102.28,Month-to-month,Yes,Yes,5,3375.24,1
+CU233,14,94.42,Month-to-month,Yes,Yes,4,1321.88,0
+CU234,21,88.1,One year,Yes,Yes,4,1850.1,0
+CU235,48,43.75,Two year,No,Yes,4,2100.0,0
+CU236,20,60.02,Month-to-month,Yes,Yes,0,1200.4,0
+CU237,8,67.77,Two year,No,Yes,0,542.16,0
+CU238,7,28.29,One year,Yes,Yes,2,198.03,0
+CU239,67,72.84,Month-to-month,Yes,Yes,9,4880.28,0
+CU240,17,63.63,Two year,No,Yes,3,1081.71,0
+CU241,33,100.21,Two year,Yes,Yes,4,3306.93,0
+CU242,48,117.79,Month-to-month,No,No,1,5653.92,0
+CU243,59,75.6,Month-to-month,Yes,Yes,7,4460.4,1
+CU244,22,52.27,Two year,Yes,Yes,1,1149.94,0
+CU245,30,24.34,One year,Yes,No,8,730.2,0
+CU246,38,112.46,Month-to-month,Yes,Yes,1,4273.48,0
+CU247,51,111.91,Two year,Yes,No,8,5707.41,0
+CU248,54,45.3,Two year,No,Yes,6,2446.2,0
+CU249,8,89.54,Two year,No,Yes,7,716.32,0
+CU250,27,27.54,Two year,No,Yes,1,743.58,0
