@@ -17,3 +17,5 @@ artifacts/*
 !artifacts/*.json
 htmlcov/
 .coverage
+
+.vercel

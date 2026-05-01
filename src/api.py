@@ -96,6 +96,17 @@ def _load_artifacts() -> tuple[Any, dict[str, Any]]:
 
 # ── Endpoints ───────────────────────────────────────────────────────────
 
+@app.get("/", tags=["System"])
+def root() -> dict[str, Any]:
+    """Provide a simple landing response for API deployments."""
+    return {
+        "name": app.title,
+        "status": "ok",
+        "docs_url": "/docs",
+        "health_url": "/health",
+        "predict_url": "/predict",
+    }
+
 @app.get("/health", response_model=HealthResponse, tags=["System"])
 def health_check() -> dict[str, Any]:
     """Check API health and model availability."""
